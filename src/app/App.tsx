@@ -1,11 +1,17 @@
-function App() {
+// common
+import Navbar from "../shared/components/navbar";
+import Footer from "../shared/components/footer";
+import Hero from "../shared/components/hero";
+
+export default function App() {
   return (
     <>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar/>
+      <main className="main">
+        <Hero/>
+      </main>
+      <Footer/>
     </>
   );
 }
 
-export default App;

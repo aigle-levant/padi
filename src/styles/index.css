@@ -1,5 +1,13 @@
-@layer theme, base, mui, components, utilities;
-@import 'tailwindcss';
+@import "tailwindcss";
+
+/* --- MUI variable theme layer --- */
+@layer theme, mui;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
 
 @theme inline {
   /* Material UI typography */
